@@ -45,4 +45,17 @@ use {
 }
 
 use('tpope/vim-fugitive')
+use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+use { "catppuccin/nvim", as = "catppuccin" }
+
+use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional
+  },
+  config = function()
+    require("nvim-tree").setup {}
+  end
+}
+
 end)
